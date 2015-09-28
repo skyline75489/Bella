@@ -25,8 +25,8 @@ class BellaTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         let options: Extension = [.EXT_FENCED_CODE, .EXT_AUTOLINK]
-        let realOutput = Bella.render("### Hello", ext: options)
-        let expectOutput = "<h3>Hello</h3>\n"
+        let realOutput = Bella.render("### Hello你好", ext: options)
+        let expectOutput = "<h3>Hello你好</h3>\n"
         XCTAssertEqual(realOutput, expectOutput)
     }
     
