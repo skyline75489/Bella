@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D27A3F11BB92A2900D373E1 /* Bella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D27A3F01BB92A2900D373E1 /* Bella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D27A3F81BB92A2900D373E1 /* Bella.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D27A3ED1BB92A2900D373E1 /* Bella.framework */; settings = {ASSET_TAGS = (); }; };
+		2D27A3FD1BB92A2900D373E1 /* BellaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27A3FC1BB92A2900D373E1 /* BellaTests.swift */; };
+		2D27A40E1BB92B7000D373E1 /* houdini_href_e.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D27A4081BB92B7000D373E1 /* houdini_href_e.c */; settings = {ASSET_TAGS = (); }; };
+		2D27A40F1BB92B7000D373E1 /* houdini_html_e.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D27A4091BB92B7000D373E1 /* houdini_html_e.c */; settings = {ASSET_TAGS = (); }; };
+		2D27A4101BB92B7000D373E1 /* houdini.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D27A40A1BB92B7000D373E1 /* houdini.h */; settings = {ASSET_TAGS = (); }; };
+		2D27A4111BB92B7000D373E1 /* html_smartypants.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D27A40B1BB92B7000D373E1 /* html_smartypants.c */; settings = {ASSET_TAGS = (); }; };
+		2D27A4121BB92B7000D373E1 /* html.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D27A40C1BB92B7000D373E1 /* html.c */; settings = {ASSET_TAGS = (); }; };
+		2D27A4131BB92B7000D373E1 /* html.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D27A40D1BB92B7000D373E1 /* html.h */; settings = {ASSET_TAGS = (); }; };
+		2D27A41D1BB92B7D00D373E1 /* autolink.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D27A4141BB92B7D00D373E1 /* autolink.c */; settings = {ASSET_TAGS = (); }; };
+		2D27A41E1BB92B7D00D373E1 /* autolink.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D27A4151BB92B7D00D373E1 /* autolink.h */; settings = {ASSET_TAGS = (); }; };
+		2D27A41F1BB92B7D00D373E1 /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D27A4161BB92B7D00D373E1 /* buffer.c */; settings = {ASSET_TAGS = (); }; };
+		2D27A4201BB92B7D00D373E1 /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D27A4171BB92B7D00D373E1 /* buffer.h */; settings = {ASSET_TAGS = (); }; };
+		2D27A4211BB92B7D00D373E1 /* html_blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D27A4181BB92B7D00D373E1 /* html_blocks.h */; settings = {ASSET_TAGS = (); }; };
+		2D27A4221BB92B7D00D373E1 /* markdown.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D27A4191BB92B7D00D373E1 /* markdown.c */; settings = {ASSET_TAGS = (); }; };
+		2D27A4231BB92B7D00D373E1 /* markdown.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D27A41A1BB92B7D00D373E1 /* markdown.h */; settings = {ASSET_TAGS = (); }; };
+		2D27A4241BB92B7D00D373E1 /* stack.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D27A41B1BB92B7D00D373E1 /* stack.c */; settings = {ASSET_TAGS = (); }; };
+		2D27A4251BB92B7D00D373E1 /* stack.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D27A41C1BB92B7D00D373E1 /* stack.h */; settings = {ASSET_TAGS = (); }; };
+		2D27A4271BB92BA000D373E1 /* Bella.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27A4261BB92BA000D373E1 /* Bella.swift */; settings = {ASSET_TAGS = (); }; };
+		2D27A42B1BB9331F00D373E1 /* Bella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D27A42A1BB9331F00D373E1 /* Bella.h */; settings = {ASSET_TAGS = (); }; };
+		2D27A42D1BB9428D00D373E1 /* Bella.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D27A42C1BB9428D00D373E1 /* Bella.c */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2D27A3F91BB92A2900D373E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D27A3E41BB92A2900D373E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D27A3EC1BB92A2900D373E1;
+			remoteInfo = Bella;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2D27A3ED1BB92A2900D373E1 /* Bella.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bella.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D27A3F01BB92A2900D373E1 /* Bella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bella.h; sourceTree = "<group>"; };
+		2D27A3F21BB92A2900D373E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D27A3F71BB92A2900D373E1 /* BellaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BellaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D27A3FC1BB92A2900D373E1 /* BellaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BellaTests.swift; sourceTree = "<group>"; };
+		2D27A3FE1BB92A2900D373E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D27A4081BB92B7000D373E1 /* houdini_href_e.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = houdini_href_e.c; path = sundown/html/houdini_href_e.c; sourceTree = SOURCE_ROOT; };
+		2D27A4091BB92B7000D373E1 /* houdini_html_e.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = houdini_html_e.c; path = sundown/html/houdini_html_e.c; sourceTree = SOURCE_ROOT; };
+		2D27A40A1BB92B7000D373E1 /* houdini.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = houdini.h; path = sundown/html/houdini.h; sourceTree = SOURCE_ROOT; };
+		2D27A40B1BB92B7000D373E1 /* html_smartypants.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = html_smartypants.c; path = sundown/html/html_smartypants.c; sourceTree = SOURCE_ROOT; };
+		2D27A40C1BB92B7000D373E1 /* html.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = html.c; path = sundown/html/html.c; sourceTree = SOURCE_ROOT; };
+		2D27A40D1BB92B7000D373E1 /* html.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = html.h; path = sundown/html/html.h; sourceTree = SOURCE_ROOT; };
+		2D27A4141BB92B7D00D373E1 /* autolink.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = autolink.c; path = sundown/src/autolink.c; sourceTree = SOURCE_ROOT; };
+		2D27A4151BB92B7D00D373E1 /* autolink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = autolink.h; path = sundown/src/autolink.h; sourceTree = SOURCE_ROOT; };
+		2D27A4161BB92B7D00D373E1 /* buffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = buffer.c; path = sundown/src/buffer.c; sourceTree = SOURCE_ROOT; };
+		2D27A4171BB92B7D00D373E1 /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = buffer.h; path = sundown/src/buffer.h; sourceTree = SOURCE_ROOT; };
+		2D27A4181BB92B7D00D373E1 /* html_blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = html_blocks.h; path = sundown/src/html_blocks.h; sourceTree = SOURCE_ROOT; };
+		2D27A4191BB92B7D00D373E1 /* markdown.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = markdown.c; path = sundown/src/markdown.c; sourceTree = SOURCE_ROOT; };
+		2D27A41A1BB92B7D00D373E1 /* markdown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = markdown.h; path = sundown/src/markdown.h; sourceTree = SOURCE_ROOT; };
+		2D27A41B1BB92B7D00D373E1 /* stack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = stack.c; path = sundown/src/stack.c; sourceTree = SOURCE_ROOT; };
+		2D27A41C1BB92B7D00D373E1 /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stack.h; path = sundown/src/stack.h; sourceTree = SOURCE_ROOT; };
+		2D27A4261BB92BA000D373E1 /* Bella.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bella.swift; sourceTree = "<group>"; };
+		2D27A4291BB92F3A00D373E1 /* module.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; name = module.map; path = ../sundown/module.map; sourceTree = "<group>"; };
+		2D27A42A1BB9331F00D373E1 /* Bella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bella.h; path = sundown/Bella.h; sourceTree = SOURCE_ROOT; };
+		2D27A42C1BB9428D00D373E1 /* Bella.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Bella.c; path = sundown/Bella.c; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D27A3E91BB92A2900D373E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D27A3F41BB92A2900D373E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D27A3F81BB92A2900D373E1 /* Bella.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D27A3E31BB92A2900D373E1 = {
+			isa = PBXGroup;
+			children = (
+				2D27A3EF1BB92A2900D373E1 /* Bella */,
+				2D27A3FB1BB92A2900D373E1 /* BellaTests */,
+				2D27A3EE1BB92A2900D373E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2D27A3EE1BB92A2900D373E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D27A3ED1BB92A2900D373E1 /* Bella.framework */,
+				2D27A3F71BB92A2900D373E1 /* BellaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D27A3EF1BB92A2900D373E1 /* Bella */ = {
+			isa = PBXGroup;
+			children = (
+				2D27A4071BB92AFD00D373E1 /* Sundown */,
+				2D27A3F01BB92A2900D373E1 /* Bella.h */,
+				2D27A3F21BB92A2900D373E1 /* Info.plist */,
+				2D27A4261BB92BA000D373E1 /* Bella.swift */,
+			);
+			path = Bella;
+			sourceTree = "<group>";
+		};
+		2D27A3FB1BB92A2900D373E1 /* BellaTests */ = {
+			isa = PBXGroup;
+			children = (
+				2D27A3FC1BB92A2900D373E1 /* BellaTests.swift */,
+				2D27A3FE1BB92A2900D373E1 /* Info.plist */,
+			);
+			path = BellaTests;
+			sourceTree = "<group>";
+		};
+		2D27A4071BB92AFD00D373E1 /* Sundown */ = {
+			isa = PBXGroup;
+			children = (
+				2D27A42C1BB9428D00D373E1 /* Bella.c */,
+				2D27A42A1BB9331F00D373E1 /* Bella.h */,
+				2D27A4141BB92B7D00D373E1 /* autolink.c */,
+				2D27A4151BB92B7D00D373E1 /* autolink.h */,
+				2D27A4161BB92B7D00D373E1 /* buffer.c */,
+				2D27A4171BB92B7D00D373E1 /* buffer.h */,
+				2D27A4181BB92B7D00D373E1 /* html_blocks.h */,
+				2D27A4191BB92B7D00D373E1 /* markdown.c */,
+				2D27A41A1BB92B7D00D373E1 /* markdown.h */,
+				2D27A41B1BB92B7D00D373E1 /* stack.c */,
+				2D27A41C1BB92B7D00D373E1 /* stack.h */,
+				2D27A4081BB92B7000D373E1 /* houdini_href_e.c */,
+				2D27A4091BB92B7000D373E1 /* houdini_html_e.c */,
+				2D27A40A1BB92B7000D373E1 /* houdini.h */,
+				2D27A40B1BB92B7000D373E1 /* html_smartypants.c */,
+				2D27A40C1BB92B7000D373E1 /* html.c */,
+				2D27A40D1BB92B7000D373E1 /* html.h */,
+				2D27A4291BB92F3A00D373E1 /* module.map */,
+			);
+			name = Sundown;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2D27A3EA1BB92A2900D373E1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D27A42B1BB9331F00D373E1 /* Bella.h in Headers */,
+				2D27A4131BB92B7000D373E1 /* html.h in Headers */,
+				2D27A3F11BB92A2900D373E1 /* Bella.h in Headers */,
+				2D27A4101BB92B7000D373E1 /* houdini.h in Headers */,
+				2D27A4251BB92B7D00D373E1 /* stack.h in Headers */,
+				2D27A4211BB92B7D00D373E1 /* html_blocks.h in Headers */,
+				2D27A4231BB92B7D00D373E1 /* markdown.h in Headers */,
+				2D27A4201BB92B7D00D373E1 /* buffer.h in Headers */,
+				2D27A41E1BB92B7D00D373E1 /* autolink.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2D27A3EC1BB92A2900D373E1 /* Bella */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D27A4011BB92A2900D373E1 /* Build configuration list for PBXNativeTarget "Bella" */;
+			buildPhases = (
+				2D27A3E81BB92A2900D373E1 /* Sources */,
+				2D27A3E91BB92A2900D373E1 /* Frameworks */,
+				2D27A3EA1BB92A2900D373E1 /* Headers */,
+				2D27A3EB1BB92A2900D373E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bella;
+			productName = Bella;
+			productReference = 2D27A3ED1BB92A2900D373E1 /* Bella.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2D27A3F61BB92A2900D373E1 /* BellaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D27A4041BB92A2900D373E1 /* Build configuration list for PBXNativeTarget "BellaTests" */;
+			buildPhases = (
+				2D27A3F31BB92A2900D373E1 /* Sources */,
+				2D27A3F41BB92A2900D373E1 /* Frameworks */,
+				2D27A3F51BB92A2900D373E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D27A3FA1BB92A2900D373E1 /* PBXTargetDependency */,
+			);
+			name = BellaTests;
+			productName = BellaTests;
+			productReference = 2D27A3F71BB92A2900D373E1 /* BellaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D27A3E41BB92A2900D373E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = skyline;
+				TargetAttributes = {
+					2D27A3EC1BB92A2900D373E1 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					2D27A3F61BB92A2900D373E1 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 2D27A3E71BB92A2900D373E1 /* Build configuration list for PBXProject "Bella" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2D27A3E31BB92A2900D373E1;
+			productRefGroup = 2D27A3EE1BB92A2900D373E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D27A3EC1BB92A2900D373E1 /* Bella */,
+				2D27A3F61BB92A2900D373E1 /* BellaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D27A3EB1BB92A2900D373E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D27A3F51BB92A2900D373E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D27A3E81BB92A2900D373E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D27A4121BB92B7000D373E1 /* html.c in Sources */,
+				2D27A41F1BB92B7D00D373E1 /* buffer.c in Sources */,
+				2D27A41D1BB92B7D00D373E1 /* autolink.c in Sources */,
+				2D27A4221BB92B7D00D373E1 /* markdown.c in Sources */,
+				2D27A4111BB92B7000D373E1 /* html_smartypants.c in Sources */,
+				2D27A40E1BB92B7000D373E1 /* houdini_href_e.c in Sources */,
+				2D27A4241BB92B7D00D373E1 /* stack.c in Sources */,
+				2D27A4271BB92BA000D373E1 /* Bella.swift in Sources */,
+				2D27A42D1BB9428D00D373E1 /* Bella.c in Sources */,
+				2D27A40F1BB92B7000D373E1 /* houdini_html_e.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D27A3F31BB92A2900D373E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D27A3FD1BB92A2900D373E1 /* BellaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2D27A3FA1BB92A2900D373E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D27A3EC1BB92A2900D373E1 /* Bella */;
+			targetProxy = 2D27A3F91BB92A2900D373E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2D27A3FF1BB92A2900D373E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2D27A4001BB92A2900D373E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2D27A4021BB92A2900D373E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Bella/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.edu.hit.www.Bella;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				"SWIFT_INCLUDE_PATHS[arch=*]" = "${SRCROOT}/sundown";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2D27A4031BB92A2900D373E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Bella/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.edu.hit.www.Bella;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				"SWIFT_INCLUDE_PATHS[arch=*]" = "${SRCROOT}/sundown";
+			};
+			name = Release;
+		};
+		2D27A4051BB92A2900D373E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BellaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.edu.hit.www.BellaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2D27A4061BB92A2900D373E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BellaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.edu.hit.www.BellaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D27A3E71BB92A2900D373E1 /* Build configuration list for PBXProject "Bella" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D27A3FF1BB92A2900D373E1 /* Debug */,
+				2D27A4001BB92A2900D373E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D27A4011BB92A2900D373E1 /* Build configuration list for PBXNativeTarget "Bella" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D27A4021BB92A2900D373E1 /* Debug */,
+				2D27A4031BB92A2900D373E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D27A4041BB92A2900D373E1 /* Build configuration list for PBXNativeTarget "BellaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D27A4051BB92A2900D373E1 /* Debug */,
+				2D27A4061BB92A2900D373E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2D27A3E41BB92A2900D373E1 /* Project object */;
+}
