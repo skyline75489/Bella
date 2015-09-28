@@ -35,8 +35,8 @@ public func render(s:String, ext:Extension?=nil) -> String {
     let ib = bufnew(READ_UNIT)
     let ob = bufnew(OUTPUT_UNIT)
     
-    let callbacks = UnsafeMutablePointer<sd_callbacks>.alloc(0)
-    let options = UnsafeMutablePointer<html_renderopt>.alloc(0)
+    let callbacks = UnsafeMutablePointer<sd_callbacks>.alloc(1)
+    let options = UnsafeMutablePointer<html_renderopt>.alloc(1)
 
     if let ext = ext {
         options.memory.flags = UInt32(ext.rawValue)
@@ -50,6 +50,9 @@ public func render(s:String, ext:Extension?=nil) -> String {
     sd_markdown_free(markdown)
     
     let o = buf_to_string(ob)
-    
+    defer {
+        bufrelease(ib)
+        bufrelease(ob)
+    }
     return String(CString: o, encoding: NSUTF8StringEncoding)!
 }
