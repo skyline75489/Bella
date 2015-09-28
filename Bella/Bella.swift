@@ -47,13 +47,9 @@ public func render(s:String, ext:Extension?=nil) -> String {
     
     let markdown = sd_markdown_new(0, 16, callbacks, options)
     sd_markdown_render(ob, ib.memory.data, ib.memory.size, markdown)
+    sd_markdown_free(markdown)
     
     let o = buf_to_string(ob)
     
-    defer {
-        sd_markdown_free(markdown)
-        bufrelease(ib)
-        bufrelease(ob)
-    }
     return String(CString: o, encoding: NSUTF8StringEncoding)!
 }
