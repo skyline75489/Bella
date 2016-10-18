@@ -12,7 +12,7 @@ import Sundown
 let READ_UNIT = 1024
 let OUTPUT_UNIT = 128
 
-public struct Extension:OptionSetType {
+public struct Extension:OptionSet {
     public let rawValue: Int
 
     static let None                  = Extension(rawValue: 0)
@@ -31,22 +31,22 @@ public struct Extension:OptionSetType {
 }
 
 
-public func render(s:String, ext:Extension?=nil) -> String {
+public func render(_ s:String, ext:Extension?=nil) -> String {
     let ib = bufnew(READ_UNIT)
     let ob = bufnew(OUTPUT_UNIT)
     
-    let callbacks = UnsafeMutablePointer<sd_callbacks>.alloc(1)
-    let options = UnsafeMutablePointer<html_renderopt>.alloc(1)
+    let callbacks = UnsafeMutablePointer<sd_callbacks>.allocate(capacity: 1)
+    let options = UnsafeMutablePointer<html_renderopt>.allocate(capacity: 1)
 
     if let ext = ext {
-        options.memory.flags = UInt32(ext.rawValue)
+        options.pointee.flags = UInt32(ext.rawValue)
     }
     string_to_buf(ib, s)
     
     sdhtml_renderer(callbacks, options, 0)
     
     let markdown = sd_markdown_new(0, 16, callbacks, options)
-    sd_markdown_render(ob, ib.memory.data, ib.memory.size, markdown)
+    sd_markdown_render(ob, ib?.pointee.data, (ib?.pointee.size)!, markdown)
     sd_markdown_free(markdown)
     
     let o = buf_to_string(ob)
@@ -54,5 +54,5 @@ public func render(s:String, ext:Extension?=nil) -> String {
         bufrelease(ib)
         bufrelease(ob)
     }
-    return String(CString: o, encoding: NSUTF8StringEncoding)!
+    return String.init(utf8String: o!)!;
 }

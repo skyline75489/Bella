@@ -1,8 +1,8 @@
 #include "Bella.h"
 #include "stdlib.h"
+#include "string.h"
 
 void string_to_buf(struct buf *ib, const char *i) {
-    int ret;
     bufgrow(ib, strlen(i));
     
     ib->size = strlen(i);
