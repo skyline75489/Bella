@@ -6,7 +6,7 @@
 //  Copyright © 2015年 skyline. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for Bella.
 FOUNDATION_EXPORT double BellaVersionNumber;

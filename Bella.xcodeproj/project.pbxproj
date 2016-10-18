@@ -290,6 +290,7 @@
 					};
 					2DD4A2731BBA0AB9006BB5B9 = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -565,6 +566,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				"SWIFT_INCLUDE_PATHS[arch=*]" = "${SRCROOT}/sundown";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -586,6 +588,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				"SWIFT_INCLUDE_PATHS[arch=*]" = "${SRCROOT}/sundown";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
