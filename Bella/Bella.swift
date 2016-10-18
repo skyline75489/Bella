@@ -13,25 +13,24 @@ let READ_UNIT = 1024
 let OUTPUT_UNIT = 128
 
 public struct Extension:OptionSet {
-    public let rawValue: Int
+    public let rawValue: UInt
 
-    static let None                  = Extension(rawValue: 0)
-    static let EXT_NO_INTRA_EMPHASIS = Extension(rawValue: 1 << 0)
-    static let EXT_TABLES            = Extension(rawValue: 1 << 1)
-    static let EXT_FENCED_CODE       = Extension(rawValue: 1 << 2)
-    static let EXT_AUTOLINK          = Extension(rawValue: 1 << 3)
-    static let EXT_STRIKETHROUGH     = Extension(rawValue: 1 << 4)
-    static let EXT_SPACE_HEADERS     = Extension(rawValue: 1 << 6)
-    static let EXT_SUPERSCRIPT       = Extension(rawValue: 1 << 7)
-    static let EXT_LAX_SPACING       = Extension(rawValue: 1 << 8)
+    static let NoIntraEmphasis = Extension(rawValue: UInt(MKDEXT_NO_INTRA_EMPHASIS.rawValue))
+    static let Tables          = Extension(rawValue: UInt(MKDEXT_TABLES.rawValue))
+    static let FencedCode      = Extension(rawValue: UInt(MKDEXT_FENCED_CODE.rawValue))
+    static let AutoLink        = Extension(rawValue: UInt(MKDEXT_AUTOLINK.rawValue))
+    static let StrikeThrough   = Extension(rawValue: UInt(MKDEXT_STRIKETHROUGH.rawValue))
+    static let SpaceHeaders    = Extension(rawValue: UInt(MKDEXT_SPACE_HEADERS.rawValue))
+    static let SuperScript     = Extension(rawValue: UInt(MKDEXT_SUPERSCRIPT.rawValue))
+    static let LaxSpacing      = Extension(rawValue: UInt(MKDEXT_LAX_SPACING.rawValue))
     
-    public init(rawValue: Int) {
+    public init(rawValue: UInt) {
         self.rawValue = rawValue
     }
 }
 
 
-public func render(_ s:String, ext:Extension?=nil) -> String? {
+public func render(_ s:String, with ext:Extension?=nil) -> String? {
     let ib = bufnew(READ_UNIT)
     let ob = bufnew(OUTPUT_UNIT)
     
