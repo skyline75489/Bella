@@ -31,7 +31,7 @@ public struct Extension:OptionSet {
 }
 
 
-public func render(_ s:String, ext:Extension?=nil) -> String {
+public func render(_ s:String, ext:Extension?=nil) -> String? {
     let ib = bufnew(READ_UNIT)
     let ob = bufnew(OUTPUT_UNIT)
     
@@ -54,5 +54,8 @@ public func render(_ s:String, ext:Extension?=nil) -> String {
         bufrelease(ib)
         bufrelease(ob)
     }
-    return String.init(utf8String: o!)!;
+    if let result = o {
+        return String(utf8String: result)
+    }
+    return nil;
 }
