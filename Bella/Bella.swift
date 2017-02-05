@@ -23,7 +23,7 @@ public struct MarkdownExtension : OptionSet {
     public static let strikeThrough   = MarkdownExtension(rawValue: UInt(MKDEXT_STRIKETHROUGH.rawValue))
     public static let spaceHeaders    = MarkdownExtension(rawValue: UInt(MKDEXT_SPACE_HEADERS.rawValue))
     public static let superScript     = MarkdownExtension(rawValue: UInt(MKDEXT_SUPERSCRIPT.rawValue))
-    static let laxSpacing      = MarkdownExtension(rawValue: UInt(MKDEXT_LAX_SPACING.rawValue))
+    public static let laxSpacing      = MarkdownExtension(rawValue: UInt(MKDEXT_LAX_SPACING.rawValue))
     
     public init(rawValue: UInt) {
         self.rawValue = rawValue
