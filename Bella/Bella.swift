@@ -16,13 +16,13 @@ public struct MarkdownExtension : OptionSet {
 
     public let rawValue: UInt
 
-    static let noIntraEmphasis = MarkdownExtension(rawValue: UInt(MKDEXT_NO_INTRA_EMPHASIS.rawValue))
-    static let tables          = MarkdownExtension(rawValue: UInt(MKDEXT_TABLES.rawValue))
-    static let fencedCode      = MarkdownExtension(rawValue: UInt(MKDEXT_FENCED_CODE.rawValue))
-    static let autoLink        = MarkdownExtension(rawValue: UInt(MKDEXT_AUTOLINK.rawValue))
-    static let strikeThrough   = MarkdownExtension(rawValue: UInt(MKDEXT_STRIKETHROUGH.rawValue))
-    static let spaceHeaders    = MarkdownExtension(rawValue: UInt(MKDEXT_SPACE_HEADERS.rawValue))
-    static let superScript     = MarkdownExtension(rawValue: UInt(MKDEXT_SUPERSCRIPT.rawValue))
+    public static let noIntraEmphasis = MarkdownExtension(rawValue: UInt(MKDEXT_NO_INTRA_EMPHASIS.rawValue))
+    public static let tables          = MarkdownExtension(rawValue: UInt(MKDEXT_TABLES.rawValue))
+    public static let fencedCode      = MarkdownExtension(rawValue: UInt(MKDEXT_FENCED_CODE.rawValue))
+    public static let autoLink        = MarkdownExtension(rawValue: UInt(MKDEXT_AUTOLINK.rawValue))
+    public static let strikeThrough   = MarkdownExtension(rawValue: UInt(MKDEXT_STRIKETHROUGH.rawValue))
+    public static let spaceHeaders    = MarkdownExtension(rawValue: UInt(MKDEXT_SPACE_HEADERS.rawValue))
+    public static let superScript     = MarkdownExtension(rawValue: UInt(MKDEXT_SUPERSCRIPT.rawValue))
     static let laxSpacing      = MarkdownExtension(rawValue: UInt(MKDEXT_LAX_SPACING.rawValue))
     
     public init(rawValue: UInt) {
