@@ -8,6 +8,6 @@ A sample Swift binding for [Sundown](https://github.com/vmg/sundown), a markdown
 ```swift
 import Bella
 
-let options: Extension = [.fencedCode, .autoLink]
+let options: MarkdownExtension = [.fencedCode, .autoLink]
 let result = Bella.render("### Hello你好", with: options)
 ```

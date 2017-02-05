@@ -12,25 +12,27 @@ import Sundown
 let READ_UNIT = 1024
 let OUTPUT_UNIT = 128
 
-public struct Extension:OptionSet {
+public struct MarkdownExtension : OptionSet {
+
     public let rawValue: UInt
 
-    static let noIntraEmphasis = Extension(rawValue: UInt(MKDEXT_NO_INTRA_EMPHASIS.rawValue))
-    static let tables          = Extension(rawValue: UInt(MKDEXT_TABLES.rawValue))
-    static let fencedCode      = Extension(rawValue: UInt(MKDEXT_FENCED_CODE.rawValue))
-    static let autoLink        = Extension(rawValue: UInt(MKDEXT_AUTOLINK.rawValue))
-    static let strikeThrough   = Extension(rawValue: UInt(MKDEXT_STRIKETHROUGH.rawValue))
-    static let spaceHeaders    = Extension(rawValue: UInt(MKDEXT_SPACE_HEADERS.rawValue))
-    static let superScript     = Extension(rawValue: UInt(MKDEXT_SUPERSCRIPT.rawValue))
-    static let laxSpacing      = Extension(rawValue: UInt(MKDEXT_LAX_SPACING.rawValue))
+    static let noIntraEmphasis = MarkdownExtension(rawValue: UInt(MKDEXT_NO_INTRA_EMPHASIS.rawValue))
+    static let tables          = MarkdownExtension(rawValue: UInt(MKDEXT_TABLES.rawValue))
+    static let fencedCode      = MarkdownExtension(rawValue: UInt(MKDEXT_FENCED_CODE.rawValue))
+    static let autoLink        = MarkdownExtension(rawValue: UInt(MKDEXT_AUTOLINK.rawValue))
+    static let strikeThrough   = MarkdownExtension(rawValue: UInt(MKDEXT_STRIKETHROUGH.rawValue))
+    static let spaceHeaders    = MarkdownExtension(rawValue: UInt(MKDEXT_SPACE_HEADERS.rawValue))
+    static let superScript     = MarkdownExtension(rawValue: UInt(MKDEXT_SUPERSCRIPT.rawValue))
+    static let laxSpacing      = MarkdownExtension(rawValue: UInt(MKDEXT_LAX_SPACING.rawValue))
     
     public init(rawValue: UInt) {
         self.rawValue = rawValue
     }
+
 }
 
 
-public func render(_ s:String, with ext:Extension = .init(rawValue: 0)) -> String? {
+public func render(_ s:String, with ext:MarkdownExtension = .init(rawValue: 0)) -> String? {
     let ib = bufnew(READ_UNIT)
     let ob = bufnew(OUTPUT_UNIT)
     
